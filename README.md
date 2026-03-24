@@ -1,22 +1,70 @@
-# Soroban Project
+# 🏠 Rental Agreement Manager (Soroban Smart Contract)
 
-## Project Structure
+## 📌 Project Description
 
-This repository uses the recommended structure for a Soroban project:
+Rental Agreement Manager is a decentralized smart contract built on the Stellar Soroban platform that enables landlords and tenants to create, manage, and enforce rental agreements securely on-chain.
 
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+This project demonstrates how blockchain can bring transparency, trust, and automation to traditional rental systems.
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+---
+
+## ⚙️ What It Does
+
+The smart contract allows:
+
+- Landlords to create rental agreements
+- Tenants to accept agreements
+- Both parties to verify agreement details on-chain
+- Landlords to terminate agreements when needed
+
+All data is stored immutably on the Stellar blockchain using Soroban smart contracts.
+
+---
+
+## ✨ Features
+
+- 🔐 **Secure Authentication**
+  - Uses Stellar addresses for identity verification
+
+- 📄 **On-chain Rental Agreements**
+  - Stores landlord, tenant, rent amount, and duration
+
+- ✅ **Tenant Approval System**
+  - Tenant must authorize agreement
+
+- 🛑 **Agreement Termination**
+  - Landlord can deactivate agreements
+
+- ⚡ **Decentralized & Transparent**
+  - No middlemen required
+
+---
+
+## 🧱 Tech Stack
+
+- **Soroban SDK (Rust)**
+- **Stellar Blockchain**
+- **Smart Contracts**
+
+---
+
+## 🚀 How It Works
+
+1. Landlord creates a rental agreement
+2. Agreement is stored on-chain
+3. Tenant accepts the agreement
+4. Contract becomes active
+5. Landlord can terminate if needed
+
+---
+
+## 📦 Contract Functions
+
+- `create_agreement()`
+- `get_agreement()`
+- `accept_agreement()`
+- `terminate_agreement()`
+
+---
+
+## 🔗 Deployed Smart Contract Link
